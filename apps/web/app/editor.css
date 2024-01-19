@@ -1,0 +1,30 @@
+.simple-editor {
+  width: 100%;
+}
+
+.simple-editor-select-content {
+  height: 34px;
+  padding: 4px 0 4px 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(51,51,51,.06);
+  }
+}
+.simple-editor-select-popover {
+  z-index: 1;
+  width: max-content;
+  position: absolute;
+  border: 1px solid #e1e4ea;
+  min-width: 40px;
+  padding: 4px 0px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+.simple-editor-select-item {
+  cursor: pointer;
+  &:hover {
+    background: rgba(51, 51, 51, 0.06);
+  }
+}

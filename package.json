@@ -1,5 +1,5 @@
 {
-  "name": "editorX",
+  "name": "simple-editor",
   "private": true,
   "scripts": {
     "build": "turbo build",

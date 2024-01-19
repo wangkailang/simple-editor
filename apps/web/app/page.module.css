@@ -82,11 +82,12 @@
   width: 100%;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+.editContent {
   max-width: 100%;
   width: var(--max-width);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
 }
 
 .card {
