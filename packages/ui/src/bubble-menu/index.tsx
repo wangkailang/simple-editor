@@ -36,6 +36,7 @@ export const BubbleMenu = (props: IBubbleMenu) => {
           setIsColorOpen(false);
         },
       }}
+      className='flex justify-center items-center border border-gray-20 rounded p-1 bg-white'
       shouldShow={({ view, state, editor }) => {
         const { selection } = state;
         const { empty } = selection;

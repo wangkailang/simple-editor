@@ -10,7 +10,7 @@ export const MenuBtn = (props: IMenuBtn) => {
   const { editor } = props;
   const hideBold = editor.isActive('heading');
   return (
-    <div>
+    <div className='flex'>
       {MENU_ELEMENTS.filter(element => {
         return !(hideBold && element === ElementType.BOLD);
       }).map(element => {
@@ -20,6 +20,7 @@ export const MenuBtn = (props: IMenuBtn) => {
         return (
           <button
             key={element}
+            className='hover:bg-slate-200 rounded'
             // className={classNames(styles.menuItem, isActive && styles.menuActive)}
             onClick={() => {
               clearCode(editor, element);

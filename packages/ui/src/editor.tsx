@@ -22,9 +22,9 @@ export const EditorCore = () => {
   });
 
   return (
-    <div className="simple-editor">
+    <div className="simple-editor h-full">
       {editor && <BubbleMenu editor={editor} />}
-      <EditorContent editor={editor} className='simple-editor-content' />
+      <EditorContent editor={editor} className='simple-editor-content h-full' />
     </div>
   );
 }

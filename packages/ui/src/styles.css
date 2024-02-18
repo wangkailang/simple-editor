@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.simple-editor {
+  .ProseMirror {
+    height: 100%;
+    overflow-y: auto;
+    outline: none;
+  }
+}
