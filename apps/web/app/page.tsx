@@ -1,4 +1,3 @@
-import './editor.css';
 import styles from "./page.module.css";
 import { EditorCore } from "@repo/ui/editor";
 

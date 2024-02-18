@@ -87,7 +87,8 @@
   width: var(--max-width);
   border-radius: 0.5rem;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
-  min-height: 100vh;
+  height: calc(100vh - 12rem);
+  padding: 1.5rem 1rem;
 }
 
 .card {
