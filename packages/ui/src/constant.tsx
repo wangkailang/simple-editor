@@ -1,12 +1,12 @@
-import { AlignLeft } from './icons/align-left';
-import { AlignCenter } from './icons/align-center';
-import { AlignRight } from '././icons/align-right';
-import { Bold } from './icons/bold';
-import { StrikeThrough } from './icons/strike-through';
-import { Italics } from './icons/italics';
-import { Code } from './icons/code';
-import { Link } from './icons/link';
-import { Underline } from './icons/underline';
+import { 
+  ParagraphLeft, ParagraphCenter, ParagraphRight,
+  Bold,
+  Strikethrough,
+  Underline,
+  Italic,
+  Link,
+  Embed
+} from '@repo/icons';
 
 
 export enum ElementType {
@@ -23,8 +23,8 @@ export enum ElementType {
   BULLET_LIST = 'bulletList',
   TASK_LIST_ITEM = 'taskListItem',
   TASK_LIST = 'taskList',
-  CODE = 'code',
-  CODE_BLOCK = 'codeBlock',
+  Embed = 'Embed',
+  Embed_BLOCK = 'EmbedBlock',
   QUOTE = 'blockquote',
   QUOTE_ITEM = 'quoteItem',
   IMAGE = 'image',
@@ -57,19 +57,19 @@ export const ELEMENT_ICONS = {
 //   [ElementType.BULLET_LIST]: UnorderedFilled,
 //   [ElementType.QUOTE]: QuoteFilled,
 //   [ElementType.DIVIDER]: DividingLineFilled,
-  [ElementType.CODE]: Code,
-//   [ElementType.CODE_BLOCK]: CodeFilled,
+  [ElementType.Embed]: Embed,
+//   [ElementType.Embed_BLOCK]: EmbedFilled,
   [ElementType.LINK]: Link,
-  [ElementType.ITALIC]: Italics,
+  [ElementType.ITALIC]: Italic,
   [ElementType.BOLD]: Bold,
   [ElementType.UNDERLINE]: Underline,
-  [ElementType.STRIKE_THROUGH]: StrikeThrough,
+  [ElementType.STRIKE_THROUGH]: Strikethrough,
 //   [ElementType.TASK_LIST]: CheckboxOutlined,
 //   [ElementType.HIGHLIGHT]: HighlightFilled,
 //   // Alignment method
-  [ElementType.LEFT]: AlignLeft,
-  [ElementType.CENTER]: AlignCenter,
-  [ElementType.RIGHT]: AlignRight,
+  [ElementType.LEFT]: ParagraphLeft,
+  [ElementType.CENTER]: ParagraphCenter,
+  [ElementType.RIGHT]: ParagraphRight,
 };
 
 export const INLINE_BASIC_ELEMENT = [
@@ -81,7 +81,7 @@ export const INLINE_BASIC_ELEMENT = [
   ElementType.ORDERED_LIST,
   ElementType.TASK_LIST,
   ElementType.QUOTE,
-  ElementType.CODE_BLOCK,
+  ElementType.Embed_BLOCK,
 ];
 
 export const ALIGN_ELEMENT = [ElementType.LEFT, ElementType.CENTER, ElementType.RIGHT];
@@ -96,12 +96,12 @@ export const BASIC_ELEMENT = [
   ElementType.TASK_LIST,
   ElementType.QUOTE,
   ElementType.DIVIDER,
-  ElementType.CODE_BLOCK,
+  ElementType.Embed_BLOCK,
   ElementType.IMAGE,
   ElementType.VIDEO,
 ];
 
-export const MENU_ELEMENTS = [ElementType.BOLD, ElementType.ITALIC, ElementType.STRIKE_THROUGH, ElementType.UNDERLINE, ElementType.CODE];
+export const MENU_ELEMENTS = [ElementType.BOLD, ElementType.ITALIC, ElementType.STRIKE_THROUGH, ElementType.UNDERLINE, ElementType.Embed];
 
 export const HIGHLIGHT_COLORS = [
   'var(--textCommonPrimary)',

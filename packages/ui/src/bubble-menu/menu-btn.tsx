@@ -10,7 +10,7 @@ export const MenuBtn = (props: IMenuBtn) => {
   const { editor } = props;
   const hideBold = editor.isActive('heading');
   return (
-    <div className='flex'>
+    <div className='flex justify-between'>
       {MENU_ELEMENTS.filter(element => {
         return !(hideBold && element === ElementType.BOLD);
       }).map(element => {
@@ -20,8 +20,7 @@ export const MenuBtn = (props: IMenuBtn) => {
         return (
           <button
             key={element}
-            className='hover:bg-slate-200 rounded'
-            // className={classNames(styles.menuItem, isActive && styles.menuActive)}
+            className={`hover:bg-slate-200 rounded p-1 mx-0.5 ${isActive ? 'bg-slate-200' : ''}`}
             onClick={() => {
               clearCode(editor, element);
               if (editor.isActive('heading') && element === ElementType.BOLD) return;
